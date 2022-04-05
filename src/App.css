@@ -1,0 +1,12 @@
+.dark{
+background: #000;
+}
+.light{
+background: rgb(255, 220, 220);
+}
+.forcus{
+background: green;
+}
+body{
+background: rgb(24,25,26);
+}
