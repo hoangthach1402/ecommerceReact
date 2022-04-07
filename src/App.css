@@ -1,3 +1,15 @@
+a{
+    /* text-underline-offset: none; */
+    margin-bottom: 20px !important;
+    text-decoration:none !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px !important;
+    border: 1px solid black ;
+    border-radius:10px;
+    color: white !important;
+    background: #333;
+}
 .dark{
 background: #000;
 }
@@ -9,4 +21,15 @@ background: green;
 }
 body{
 background: rgb(24,25,26);
+}
+.imgStyle{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+}
+.wrapperImg{
+height: 40px;
+min-width: 100px;
+padding-right: 20px;
 }

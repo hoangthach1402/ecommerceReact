@@ -3,6 +3,7 @@ import {ShopContext} from '../App';
 
 const Product = ({product}) => {
   const {handleSelectedProduct} = useContext(ShopContext) 
+  
   return (
     <div className='card bg-info text-white col-5 m-1 pb-2 d-flex'>
     <div className='w-100 h-100'>

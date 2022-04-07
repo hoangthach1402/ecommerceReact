@@ -1,28 +1,19 @@
 import React,{useContext,useEffect} from 'react'
 import {ShopContext} from '../App'
 import Product from './Product'
+import Cart from './Cart'
+import Order from './Order'
 const Home = () => {
-   const {getAllProductsContext} = useContext(ShopContext) 
+   const {products,carts,selectedProductId,thanhtoan} = useContext(ShopContext) 
 
-        console.log(getAllProductsContext)
-        const {products} = getAllProductsContext ;
+      
+        // const {products} = getAllProductsContext ;
       
 
-    console.log(products)
-
+    // console.log(products)
     return (
-    <div className='container'>
-{/* {products.map(product=>(
-    <h1>{product.name}</h1>
-))} */}
-
-    </div>
-  )
-}
-
-export default Home
-
-{/* <div className="container">
+    
+    <div className="container">
 <div className='row'>
 <div className="col-6">
 <div className="row">
@@ -33,10 +24,17 @@ export default Home
 </div>
 </div>
 <div className="col-6">
-{(cart.length!==0) && <Cart cart={cart}/>}
+{(carts.length!==0) && <Cart/>}
 </div>
 </div>
 <div className='bg-info text-white'>
-{thanhtoan && <Order order={cart}/> }
+{thanhtoan && <Order /> }
 </div>
-</div>  */}
+</div>  
+
+  
+  )
+}
+
+export default Home
+
