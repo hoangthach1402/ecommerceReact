@@ -7,7 +7,7 @@ const Cart = () => {
     let newCart = carts.find(c=>c.id===id) ;
     let newCarts =[...carts]
     newCart ={...newCart,...changes}
-    console.log(newCart)
+    // console.log(newCart)
     let index = carts.findIndex(c=>c.id===id) ;
     newCarts[index] = newCart ;
     handleCart(newCarts)
